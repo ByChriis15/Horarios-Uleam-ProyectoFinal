@@ -1,0 +1,61 @@
+
+    <header>
+        <nav class="nombre navbar fixed-top navbar-expand-lg d-flex justify-content-start">
+            <ul class="menu">
+                <li class="navbar-brand">
+                    <a href="#" class="navbar-brand">TURI-MANTA</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar fixed-top navbar-expand-lg d-flex justify-content-end">
+        
+            <ul class="menu" >
+                <li class="navbar-brand">
+                    <a routerLink="/bienvenida">Inicio</a>
+                </li>
+                <li class="navbar-brand">
+                    <a routerLink="/lugares">Lugares</a>
+                </li>
+                <li class="navbar-brand">
+                    <a routerLink="/destacados">Destacados</a>
+                </li>
+                <li>
+                    <a class="aumento" routerLink="/favoritos"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li>
+                    <a (click)="logOut()"><button>Cerrar Sesión</button></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="portada d-flex justify-content-center align-items-center flex-column">
+            <h1>¿Qué piensan nuestros usuarios?</h1>
+            <div id="also" class="also">
+                <div class="comentario">
+                    <h2>Jenny Mendoza</h2>
+                    <img src="../../../assets/Imágenes/comentarios/5-estrellas.png" width="200" height="65">
+                    <p>Junto a mis amigos, pasamos una velada de fin de año, muy bonita, 
+                        la atención fue excelente, todo los preparativos y las bebidas 
+                        de otro nivel.</p>
+                </div>
+                <img class="imagen" src="../../../assets/Imágenes/comentarios/3.png" width="1000" height="600">
+                <a onclick="mostrarmore();"><button>Ver otros Testimonios&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-angles-right"></i></button></a>
+                <a class="out" routerLink="/playa-murcielago"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;&nbsp;Salir</a>
+            </div>
+            
+            <div id="more" class="more">
+                <img class="img1" src="../../../assets/Imágenes/comentarios/minifotos/10.png" width="250" height="250">
+                <img class="img1-1" src="../../../assets/Imágenes/comentarios/miniestrellas/4.png" width="150" height="25">
+                <p class="p1">"Disfrute mucho con mi pareja, un buen cambio de aires."</p>
+                <img class="img2" src="../../../assets/Imágenes/comentarios/minifotos/11.png" width="250" height="250">
+                <img class="img2-2" src="../../../assets/Imágenes/comentarios/miniestrellas/5.png" width="150" height="25">
+                <p class="p2">"El concierto por la noche, muy hermoso"</p>
+                <img class="img3" src="../../../assets/Imágenes/comentarios/minifotos/12.png" width="250" height="250">
+                <img class="img3-3" src="../../../assets/Imágenes/comentarios/miniestrellas/4.png" width="150" height="25">
+                <p class="p3">"Aun que habían muchas personas, se puede disfrutar</p>
+                <a onclick="cerrarmore();"><button>&nbsp;<i class="fa-sharp fa-solid fa-angles-left"></i>&nbsp;&nbsp;Regresar</button></a>
+    
+            </div>
+        </div>
+    
+    </header>
+    

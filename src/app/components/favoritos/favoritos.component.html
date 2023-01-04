@@ -1,0 +1,60 @@
+
+    <header>
+        <nav class="nombre navbar fixed-top navbar-expand-lg d-flex justify-content-start">
+            <ul class="menu" >
+                <li class="navbar-brand">
+                    <a href="#" class="navbar-brand">TURI-MANTA</a>         
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar fixed-top navbar-expand-lg d-flex justify-content-end">
+        
+            <ul class="menu" >
+                <li class="navbar-brand">
+                    <a routerLink="/bienvenida">Inicio</a>
+                </li>
+                <li class="navbar-brand">
+                    <a routerLink="/lugares">Lugares</a>
+                </li>
+                <li class="navbar-brand">
+                    <a routerLink="/destacados">Destacados</a>
+                </li>
+                <li>
+                    <a class="aumento" routerLink="/favoritos"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li>
+                    <a (click)="logOut()"><button>Cerrar Sesión</button></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="portada d-flex justify-content-center align-items-center flex-column">
+            <form>
+                <label for="days">Selecciona los días de la semana:</label><br>
+                <input type="checkbox" id="days" name="days" value="lunes"> Lunes<br>
+                <input type="checkbox" id="days" name="days" value="martes"> Martes<br>
+                <input type="checkbox" id="days" name="days" value="miercoles"> Miércoles<br>
+                <input type="checkbox" id="days" name="days" value="jueves"> Jueves<br>
+                <input type="checkbox" id="days" name="days" value="viernes"> Viernes<br>
+              
+                <br>
+                <label for="career">Selecciona tu carrera:</label><br>
+                <select id="career" name="career">
+                  <option value="tecnologias de la informacion">Tecnologías de la información</option>
+                  <option value="agropecuaria">Agropecuaria</option>
+                  <option value="arquitectura">Arquitectura</option>
+                  <option value="medicina">Medicina</option>
+                </select>
+                <br><br>
+              
+                <label for="time">Selecciona la hora:</label><br>
+                <input type="time" id="time" name="time">
+                <br><br>
+              
+                <label for="description">Agrega una descripción:</label><br>
+                <textarea id="description" name="description" rows="5" cols="40"></textarea>
+                <br><br>
+              
+                <input type="submit" value="Enviar">
+              </form>               
+        </div>
+    </header>

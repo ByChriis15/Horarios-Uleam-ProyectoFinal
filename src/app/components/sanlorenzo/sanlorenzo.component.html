@@ -1,0 +1,60 @@
+
+    <header>
+        <nav class="nombre navbar fixed-top navbar-expand-lg d-flex justify-content-start">
+            <ul class="menu" >
+                <li class="navbar-brand">
+                    <a href="#" class="navbar-brand">TURI-MANTA</a>         
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar fixed-top navbar-expand-lg d-flex justify-content-end">
+        
+            <ul class="menu" >
+                <li class="navbar-brand">
+                    <a routerLink="/bienvenida">Inicio</a>
+                </li>
+                <li class="navbar-brand">
+                    <a routerLink="/lugares">Lugares</a>
+                </li>
+                <li class="navbar-brand">
+                    <a routerLink="/destacados">Destacados</a>
+                </li>
+                <li>
+                    <a class="aumento" routerLink="/favoritos"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li>
+                    <a (click)="logOut()"><button>Cerrar Sesión</button></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="portada d-flex justify-content-center align-items-center flex-column">
+            <div class="texto-portada">
+                <h1>Playa de San Lorenzo</h1>
+                <p>Hacia el Sur del cantón, encontramos la Parroquia San Lorenzo, en cuya parroquia se encuentra 
+                    la Playa que lleva el mismo nombre, San Lorenzo de amplia extensión que se la puede observar 
+                    desde la altura del  Faro desde el cual también podemos divisar la silueta de la  Isla de La Plata.<br>
+                    Desde la playa de San Lorenzo se pueden divisar diversas formas rocosas, cuevas, aves marinas, 
+                    la isla de la Plata y de junio a septiembre de cada año, las ballenas jorobadas.<br>
+                    San Lorenzo cuenta con una extensión territorial de 40.89 Km2 y está conformada por 6 comunidades:<br>   
+                    1. Sta. Rosa.<br>
+                    2. El Habra.<br>
+                    3. Las Piñas<br>
+                    4. Ligüique<br>
+                    5. Rio Caña<br>
+                    </p>
+            </div>  
+            <a onclick="mostrarsanlorenzoimg1();"><img class="imagen1" src="../../../assets/Imágenes/sanlorenzo/1.jpg" width="210" height="150"></a>
+            <a onclick="mostrarsanlorenzoimg2();" ><img  class="imagen2" src="../../../assets/Imágenes/sanlorenzo/2.jpg" width="210" height="150"></a>
+            <a onclick="mostrarsanlorenzoimg3();"><img class="imagen3" src="../../../assets/Imágenes/sanlorenzo/3.jpg" width="210" height="150"></a>
+            <div id="imagen1eno" class="imagen1eno"> 
+                <img   src="../../../assets/Imágenes/sanlorenzo/1.jpg" width="672" height="450">
+            </div>
+            <div id="imagen2eno" class="imagen2eno"> 
+                <img   src="../../../assets/Imágenes/sanlorenzo/2.jpg" width="672" height="450">
+            </div>
+            <div id="imagen3eno" class="imagen3eno"> 
+                <img   src="../../../assets/Imágenes/sanlorenzo/3.jpg" width="672" height="450">
+            </div>
+        </div>
+        <a class="com" routerLink="/comentarios-sanlorenzo">Ver comentarios</a>
+    </header>

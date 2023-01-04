@@ -1,0 +1,71 @@
+<header>
+    <nav class="nombre navbar fixed-top navbar-expand-lg d-flex justify-content-start">
+        <ul class="menu">
+            <li class="navbar-brand">
+                <a href="#" class="navbar-brand">TURI-MANTA</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar fixed-top navbar-expand-lg d-flex justify-content-end">
+
+        <ul class="menu">
+            <li class="navbar-brand">
+                <a href="#">Inicio</a>
+            </li>
+            <li class="navbar-brand">
+                <a routerLink="/sobre">Sobre</a>
+            </li>
+            <li class="navbar-brand">
+                <a routerLink="/contactanos">Contáctanos</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="portada d-flex justify-content-center align-items-center flex-column">
+        <div class="texto-portada">
+            <h1>REGISTRATE</h1>
+            <p>Una vez hayas creado tu cuenta podras empezar a gestionar tus horarios,
+                sera un placer brindarte nuestro servicio. Esperamos sea de tu agrado.
+            </p>
+        </div>
+    </div>
+    <div *ngIf="!loading" class="registro" id="register">
+
+ 
+
+            <form class="formulario" [formGroup]="registrarUsuario" (ngSubmit)="registrar()">
+                <h2>Registro&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                    routerLink="/login"><i class="fa-solid fa-user"></i></a></h2>
+                <div>
+                    <input type="text"  formControlName="nombre" placeholder="Nombre">
+                </div>
+                <div>
+                    <input type="text"  formControlName="apellidos"
+                        placeholder="Apellidos">
+                </div>
+                <div>
+                    <input type="text"  formControlName="numero" placeholder="Número">
+                </div>
+
+                <div>
+                    <input type="text"  formControlName="email"
+                        placeholder="Correo Electrónico">
+                </div>
+
+                <div>
+                        <input type="password"  formControlName="password" placeholder="Contraseña">
+                </div>
+
+                <div>
+                        <input type="password"  formControlName="password2"  placeholder="Repetir Contraseña">
+                </div>
+
+ 
+                    <button type="submit">Enviar</button>
+                    <p><br>Si ya tienes una cuenta. <a routerLink="/login">Inicia Sesión!</a></p> 
+
+            </form>
+    </div>
+    <div *ngIf="loading" class="register d-flex align-items-center justify-content-center">
+        <app-spinner></app-spinner>
+
+    </div>

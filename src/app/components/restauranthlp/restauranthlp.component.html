@@ -1,0 +1,56 @@
+
+
+    <header>
+        <nav class="nombre navbar fixed-top navbar-expand-lg d-flex justify-content-start">
+            <ul class="menu" >
+                <li class="navbar-brand">
+                    <a href="#" class="navbar-brand">TURI-MANTA</a>         
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar fixed-top navbar-expand-lg d-flex justify-content-end">
+        
+            <ul class="menu" >
+                <li class="navbar-brand">
+                    <a routerLink="/bienvenida">Inicio</a>
+                </li>
+                <li class="navbar-brand">
+                    <a routerLink="/lugares">Lugares</a>
+                </li>
+                <li class="navbar-brand">
+                    <a routerLink="/destacados">Destacados</a>
+                </li>
+                <li>
+                    <a class="aumento" routerLink="/favoritos"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li>
+                    <a (click)="logOut()"><button>Cerrar Sesión</button></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="portada d-flex justify-content-center align-items-center flex-column">
+            <div class="texto-portada">
+                <h1>Restaurant Hasta las Patas</h1>
+                <p>En hasta las patas ha nacido con un doble objetivo: queremos ser un restaurante 
+                    donde te guste comer y donde te guste estar. Para ello, disponemos de un espacio 
+                    funcional, luminoso y elegante.<br>
+                    Nuestra propuesta gastronómica ofrece dos alternativas, siempre de la misma calidad. 
+                    Con el menú diario hemos querido reinventar una apuesta tradicional sin perder la esencia. 
+                    En la carta hemos dado rienda suelta a nuestra imaginación y a nuestro deseo de innovar.
+                    </p>
+            </div>  
+            <a onclick="mostrarsanlorenzoimg1();"><img class="imagen1" src="../../../assets/Imágenes/hastalaspatas/1.jpeg"  height="150"></a>
+            <a onclick="mostrarsanlorenzoimg2();" ><img  class="imagen2" src="../../../assets/Imágenes/hastalaspatas/2.jpg" width="210" height="150"></a>
+            <a onclick="mostrarsanlorenzoimg3();"><img class="imagen3" src="../../../assets/Imágenes/hastalaspatas/3.jpeg" width="210" height="150"></a>
+            <div id="imagen1eno" class="imagen1eno"> 
+                <img   src="../../../assets/Imágenes/hastalaspatas/1.png" height="450">
+            </div>
+            <div id="imagen2eno" class="imagen2eno"> 
+                <img   src="../../../assets/Imágenes/hastalaspatas/2.jpg" width="672" height="450">
+            </div>
+            <div id="imagen3eno" class="imagen3eno"> 
+                <img   src="../../../assets/Imágenes/hastalaspatas/3.jpeg" width="672" height="450">
+            </div>
+        </div>
+        <a class="com" routerLink="/comentarios-restaurante-hasta-las-patas">Ver comentarios</a>
+    </header>

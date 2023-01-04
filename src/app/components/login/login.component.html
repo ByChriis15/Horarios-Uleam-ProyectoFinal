@@ -1,0 +1,57 @@
+<header>
+    <nav class="nombre navbar fixed-top navbar-expand-lg d-flex justify-content-start">
+        <ul class="menu" >
+            <li class="navbar-brand">
+                <a href="#" class="navbar-brand">Horarios-Uleam</a>         
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar fixed-top navbar-expand-lg d-flex justify-content-end">
+        <ul class="menu" >
+            <li class="navbar-brand">
+                <a href="#">Inicio</a>
+            </li>
+            <li class="navbar-brand">
+                <a routerLink="/sobre">Sobre</a>
+            </li>
+            <li class="navbar-brand">
+                <a routerLink="/contactanos">Contáctanos</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="portada d-flex justify-content-center align-items-center flex-column">
+        <div class="texto-portada">
+            <h1>INICIA SESIÓN</h1>
+            <p>Ingresa al servicio de horarios de la Uleam con una cuenta registrada.</p>
+        </div>  
+    </div>
+
+    <div *ngIf="!loading" class="login">
+        <form (ngSubmit)="login()" [formGroup]="loginUsuario">
+            <h2>Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a routerLink="/registrate"><i class="fa-solid fa-user-plus"></i></a></h2>
+            <div class="form-floating">
+                <input type="email" formControlName="email" placeholder="Correo Electronico" required>
+                <span *ngIf="loginUsuario.get('email')?.hasError('required') && loginUsuario.get('email')?.touched" class="text-danger errorLabel" >
+                    El correo es requerido
+                  </span>
+                  <span *ngIf="loginUsuario.get('email')?.hasError('email') && loginUsuario.get('email')?.touched" class="text-danger errorLabel" >
+                    El correo es inválido
+                  </span>
+            </div>
+            <div class="form-floating">
+                <input type="password" formControlName="password" placeholder="Contraseña" required>
+                <span *ngIf="loginUsuario.get('password')?.hasError('required') && loginUsuario.get('password')?.touched" class="text-danger errorLabel" >
+                    La contraseña es requerida
+                  </span>
+            </div>
+            <button type="submit" id="log-in" [disabled]="loginUsuario.invalid">Ingresar</button><br><br>
+            <div>¿No tiene acceso? <a routerLink="/registrate">Regístrate!</a></div>
+            <div><a class="mt-3" routerLink="/recuperar-password">Recuperar Contraseña</a> </div>
+        </form>
+    </div>
+    <div *ngIf="loading" class="login d-flex align-items-center justify-content-center">
+    <app-spinner ></app-spinner>
+
+    </div>
+
+</header>

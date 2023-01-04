@@ -1,0 +1,85 @@
+
+    <header>
+        <nav class="nombre navbar fixed-top navbar-expand-lg d-flex justify-content-start">
+            <ul class="menu" >
+                <li class="navbar-brand">
+                    <a href="#" class="navbar-brand">TURI-MANTA</a>         
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar fixed-top navbar-expand-lg d-flex justify-content-end">
+        
+            <ul class="menu" >
+                <li class="navbar-brand">
+                    <a routerLink="/bienvenida">Inicio</a>
+                </li>
+                <li class="navbar-brand">
+                    <a routerLink="/lugares">Lugares</a>
+                </li>
+                <li class="navbar-brand">
+                    <a routerLink="/destacados">Destacados</a>
+                </li>
+                <li>
+                    <a routerLink="/favoritos"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li>
+                    <a (click)="logOut()"><button>Cerrar Sesión</button></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="lugares">
+            <section id="lugar1" class="lugar1">
+                <p>Un retiro junto al mar en Manta<br>
+                    Con una gran variedad de servicios y un centro de convenciones en el corazón de la ciudad</p>
+                <a class="com" routerLink="/comentarios-wyndham">Ver comentarios</a>
+                <div class="nombre">
+                    <h1>Wyndham Manta Sail Plaza Hotel VIP</h1>
+                    <a class="info" routerLink="/wyndham">Más información.</a>
+                </div>
+                <a class="like"><i class="fa-solid fa-heart"></i></a>
+                <a onclick="next4();" ><button class="atras"><i class="fa-sharp fa-solid fa-left-long"></i></button></a>
+                <a onclick="next2();" ><button class="next"><i class="fa-sharp fa-solid fa-right-long"></i></button></a>
+            </section>
+            <section id="lugar2" class="lugar2">
+                <p>Dentro del mes de noviembre, se celebra la cantonización de Manta, 
+                    muchos de los eventos serán realizados en esta playa.</p>
+                <a class="com" routerLink="/comentarios-playa-murcielago">Ver comentarios</a>
+                <div class="nombre">
+                    <h1>Playa El Murciélago</h1>
+                    <a class="info" routerLink="/playa-murcielago">Más información.</a>
+                </div>
+                <a class="like"><i class="fa-solid fa-heart"></i></a>
+
+                <a onclick="next1();" ><button class="atras"><i class="fa-sharp fa-solid fa-left-long"></i></button></a>
+                <a onclick="next3();" ><button class="next"><i class="fa-sharp fa-solid fa-right-long"></i></button></a>
+
+            </section>
+            <section id="lugar3" class="lugar3">
+                <p>Una playa de inigualable belleza forman un espectáculo frente a tus ojos, 
+                    es un paraíso escondido en Manta, provincia de Manabí</p>
+                <a class="com" routerLink="/comentarios-sanlorenzo">Ver comentarios</a>
+                <div class="nombre">
+                    <h1>Playa de San Lorenzo</h1>
+                    <a class="info" routerLink="/san-lorenzo">Más información.</a>
+                </div>
+                <a class="like"><i class="fa-solid fa-heart"></i></a>
+
+                <a onclick="next2();" ><button class="atras"><i class="fa-sharp fa-solid fa-left-long"></i></button></a>
+                <a onclick="next4();" ><button class="next"><i class="fa-sharp fa-solid fa-right-long"></i></button></a>
+
+            </section>
+            <section id="lugar4" class="lugar4">
+                <p>Este ha sido uno de los restaurantes en Manta mejor valorados este mes puesto su atención, 
+                    buena comida y musica escénica en vivo</p>
+                <a class="com" routerLink="/comentarios-restaurante-hasta-las-patas">Ver comentarios</a>
+                <div class="nombre">
+                    <h1>Restaurant Hasta las Patas</h1>
+                    <a class="info" routerLink="/restaurante-hasta-las-patas">Más información.</a>
+                </div>
+                <a class="like"><i class="fa-solid fa-heart"></i></a>
+                <a onclick="next3();" ><button class="atras"><i class="fa-sharp fa-solid fa-left-long"></i></button></a>
+                <a onclick="next1();" ><button class="next"><i class="fa-sharp fa-solid fa-right-long"></i></button></a>
+
+            </section>
+        </div>
+    </header>

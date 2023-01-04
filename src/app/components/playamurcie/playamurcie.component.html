@@ -1,0 +1,56 @@
+
+    <header>
+        <nav class="nombre navbar fixed-top navbar-expand-lg d-flex justify-content-start">
+            <ul class="menu" >
+                <li class="navbar-brand">
+                    <a href="#" class="navbar-brand">TURI-MANTA</a>         
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar fixed-top navbar-expand-lg d-flex justify-content-end">
+        
+            <ul class="menu" >
+                <li class="navbar-brand">
+                    <a routerLink="/bienvenida">Inicio</a>
+                </li>
+                <li class="navbar-brand">
+                    <a routerLink="/lugares">Lugares</a>
+                </li>
+                <li class="navbar-brand">
+                    <a routerLink="/destacados">Destacados</a>
+                </li>
+                <li>
+                    <a class="aumento" routerLink="/favoritos"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li>
+                    <a (click)="logOut()"><button>Cerrar Sesión</button></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="portada d-flex justify-content-center align-items-center flex-column">
+            <div class="texto-portada">
+                <h1>Playa El Murciélago</h1>
+                <p>Es una playa situada en la ciudad de Manta en la provincia de Manabí (Ecuador). El nombre de "El Murciélago" 
+                    se debe a que el área de superficie se asemeja a la silueta de este mamífero con las alas desplegadas.<br>
+
+                    Es la playa más importante de la ciudad de Manta y la más visitada por turistas regionales, nacionales 
+                    y extranjeros, quienes la prefieren todo el año y sobre todo en épocas de carnaval. En general es una 
+                    playa tranquila y acogedora para el bañista pero hay que tomar las debidas precauciones y recomendaciones 
+                    en días de aguaje o corrientes marinas, para lo cual la defensa civil advierte al público con banderas de 
+                    colores.</p>
+            </div>  
+            <a onclick="mostrarsanlorenzoimg1();"><img class="imagen1" src="../../../assets/Imágenes/playa-murcielago/1.jpg" width="210" height="150"></a>
+            <a onclick="mostrarsanlorenzoimg2();" ><img  class="imagen2" src="../../../assets/Imágenes/playa-murcielago/2.jpg" width="210" height="150"></a>
+            <a onclick="mostrarsanlorenzoimg3();"><img class="imagen3" src="../../../assets/Imágenes/playa-murcielago/3.jpg" width="210" height="150"></a>
+            <div id="imagen1eno" class="imagen1eno"> 
+                <img   src="../../../assets/Imágenes/playa-murcielago/1.jpg" width="672" height="450">
+            </div>
+            <div id="imagen2eno" class="imagen2eno"> 
+                <img   src="../../../assets/Imágenes/playa-murcielago/2.jpg" width="672" height="450">
+            </div>
+            <div id="imagen3eno" class="imagen3eno"> 
+                <img   src="../../../assets/Imágenes/playa-murcielago/3.jpg" width="672" height="450">
+            </div>
+        </div>
+        <a class="com" routerLink="/comentarios-playa-murcielago">Ver comentarios</a>
+    </header>

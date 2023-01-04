@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato:wght@400;700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Quicksand:wght@400;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 5;
+    padding: 5;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.also{
+    display: block;
+}
+.more{
+    display: none;
+}
+.aumento{
+    font-size: 30px;
+}
+.img1{
+    position: absolute;
+    top: 35%;
+    left: 17%;
+}
+.img1-1{
+    position: absolute;
+    top: 69%;
+    left: 20.1%;
+}
+.p1{
+    position: absolute;
+    top: 75%;
+    left: 17.5%;
+    width: 15%;
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+.img2{
+    position: absolute;
+    top: 35%;
+    left: 42%;
+}
+.img2-2{
+    position: absolute;
+    top: 69%;
+    left: 45.5%;
+}
+.p2{
+    position: absolute;
+    top: 75%;
+    left: 43%;
+    width: 15%;
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+.img3{
+    position: absolute;
+    top: 35%;
+    right: 17%;
+}
+.img3-3{
+    position: absolute;
+    top: 69%;
+    right: 20.1%;
+
+}
+.p3{
+    position: absolute;
+    top: 75%;
+    right: 17.5%;
+    width: 15%;
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+h1{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+.portada .imagen{
+    position: absolute;
+    top: 18%;
+    right: 0%;
+}
+.menu button{
+    position: relative;
+
+    padding: 10px 15px;
+    margin-top: 0px;
+    border: none;
+    font-size: 14px;
+    background: #d70505;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border-radius: 10%;
+}
+
+.out{
+    background-color: rgb(247, 255, 12);
+    color: black;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 40px;
+    text-decoration: none;
+
+    border-style: none;
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+.out:hover{
+    color: red;
+}
+button{
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 40px;
+    border-style: none;
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.comentario{
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 35%;
+    height: 50%;
+    padding: 60px 60px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+.comentario h2{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.comentario p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+h2 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+h2 a:hover{
+    color: #d4c600;
+}
+.nombre li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 25px 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.portada{
+    height: 735px;
+    background-image: url(../../../assets/Imágenes/FondoMorado.png);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: darken;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    list-style: none;
+}
+li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 25px 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+li a:hover{
+    color: #00bcd4;
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Open+Sans&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 5;
+    padding: 5;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.texto-portada{
+    position: absolute;
+    left: 20%;
+    width: 30%;
+}
+.aumento{
+    font-size: 30px;
+}
+.login{
+    position: fixed;
+    right: -15%;
+    top: 27%;
+    width: 50%;
+    height: 20%;
+    color: rgb(35, 9, 9);
+    background-size: cover;
+    background-position: center;
+}
+.registro{
+    position: fixed;
+    right: -15%;
+    top: 15%;
+    width: 50%;
+    height: 20%;
+    color: rgb(27, 3, 3);
+    background-size: cover;
+    background-position: center;
+}
+form{
+    width: 50%;
+    padding: 20px 30px;
+    background: #f8f8f84d;
+    position: absolute;
+    border-radius: 20px;
+    
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+     0 10px 10px rgba(0, 0, 0, 0.22);
+}
+form p{
+    
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #230606;
+}
+form p a{
+    color: #250909;
+}
+form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #210808;
+}
+form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #0d1b3c;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    color: rgb(201, 201, 201);
+    outline: none;
+}
+.texto-portada h1{
+    font-family: 'ABeeZee', sans-serif;
+}
+.texto-portada p{
+    justify-content:center;
+    font-family: 'Open Sans', sans-serif;
+}
+h2 a{
+    text-decoration: none;
+    color: rgb(46, 12, 12);
+}
+h2 a:hover{
+    color: #5672d7;
+}
+form div a{
+    color: #ce1d43;
+
+}
+.nombre li a{
+    color: rgb(35, 9, 19);
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 25px 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.portada{
+    height: 735px;
+    background-image: url(../../../assets/Imágenes/FondoW1.png);
+    color: rgb(25, 5, 5);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: darken;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    list-style: none;
+}
+li a{
+    color: rgb(46, 6, 6);
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 25px 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+li a:hover{
+    color: #d40023;
+}
